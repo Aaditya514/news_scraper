@@ -3,3 +3,33 @@
     padding : 0; 
     box-sizing: border-box;
 }
+/* default theme styles */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  background-color: #121212;  /* dark background */
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode card */
+.card {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark mode card with faint white glow */
+body.dark-theme .card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.08),
+              0 0 16px rgba(255, 255, 255, 0.05);
+}
